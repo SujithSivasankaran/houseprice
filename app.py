@@ -22,5 +22,5 @@ def predict():
     result = response.read()
     data = int(json.loads(result)['Results']['WebServiceOutput0'][0]['Scored Labels'])
     return render_template('index.html', output= data)
-if __name__ == "__main__":
-    app.run()
+# if __name__ == "__main__":
+#     app.run()
